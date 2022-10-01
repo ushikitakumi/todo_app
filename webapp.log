@@ -1,0 +1,566 @@
+2022/09/30 21:32:04 main.go:15: test
+2022/09/30 22:03:56 users.go:33: sql: converting argument $1 type: unsupported type func() uuid.UUID, a func
+2022/09/30 22:04:16 users.go:33: table users has no column named password
+2022/09/30 22:06:01 users.go:33: table users has no column named password
+2022/09/30 22:06:21 users.go:33: table users has no column named password
+2022/09/30 22:09:55 users.go:33: table users has no column named password
+2022/09/30 22:12:04 users.go:33: table users has no column named password
+2022/10/01 09:57:36 users.go:33: table users has no column named password
+2022/10/01 10:02:30 users.go:33: table users has no column named password
+2022/10/01 10:10:39 users.go:33: table users has no column named password
+2022/10/01 10:23:24 users.go:33: table users has no column named password
+2022/10/01 10:27:50 users.go:33: table users has no column named password
+2022/10/01 10:47:25 users.go:33: table users has no column named password
+2022/10/01 10:47:56 users.go:33: table users has no column named password
+2022/10/01 10:49:20 users.go:33: table users has no column named password
+2022/10/01 10:50:54 users.go:33: table users has no column named password
+2022/10/01 13:54:38 server.go:3230: http: panic serving 127.0.0.1:58956: template: signup.html:16: unexpected EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x102a478a0, 0x1400011b130})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x102aa7188?, 0x140000b8460}, {0x0, 0x0}, {0x1400014d9f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x102aa7188?, 0x140000b8460?}, 0x103010f3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x1400014dad8?, {0x102aa7188?, 0x140000b8460?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102aa7188, 0x140000b8460}, 0x1400009c600)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000094030?}, {0x102aa7188, 0x140000b8460}, 0x1400009c600)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000139400, {0x102aa7640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:54:38 server.go:3230: http: panic serving 127.0.0.1:58958: template: signup.html:16: unexpected EOF
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x102a478a0, 0x140003ae3a0})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x102aa7188?, 0x140001c6000}, {0x0, 0x0}, {0x140002259f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x102aa7188?, 0x140001c6000?}, 0x103010d3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x14000225ad8?, {0x102aa7188?, 0x140001c6000?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102aa7188, 0x140001c6000}, 0x1400007a200)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000074090?}, {0x102aa7188, 0x140001c6000}, 0x1400007a200)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000076000, {0x102aa7640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:54:38 server.go:3230: http: panic serving 127.0.0.1:58957: template: signup.html:16: unexpected EOF
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x102a478a0, 0x140003ae550})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x102aa7188?, 0x140000b8540}, {0x0, 0x0}, {0x140002299f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x102aa7188?, 0x140000b8540?}, 0x103010e3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x14000229ad8?, {0x102aa7188?, 0x140000b8540?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102aa7188, 0x140000b8540}, 0x14000222300)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400011d650?}, {0x102aa7188, 0x140000b8540}, 0x14000222300)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140001394a0, {0x102aa7640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:54:38 server.go:3230: http: panic serving 127.0.0.1:58959: template: signup.html:16: unexpected EOF
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x102a478a0, 0x140003ae650})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x102aa7188?, 0x140001c60e0}, {0x0, 0x0}, {0x140001d29f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x102aa7188?, 0x140001c60e0?}, 0x103010e3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x140001d2ad8?, {0x102aa7188?, 0x140001c60e0?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102aa7188, 0x140001c60e0}, 0x1400018e300)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400011dd70?}, {0x102aa7188, 0x140001c60e0}, 0x1400018e300)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000139540, {0x102aa7640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:54:39 server.go:3230: http: panic serving 127.0.0.1:58960: template: signup.html:16: unexpected EOF
+goroutine 49 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x102a478a0, 0x140003ae810})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x102aa7188?, 0x140000b8620}, {0x0, 0x0}, {0x140000559f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x102aa7188?, 0x140000b8620?}, 0x103010e3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x14000055ad8?, {0x102aa7188?, 0x140000b8620?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102aa7188, 0x140000b8620}, 0x1400009ca00)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140003b91a0?}, {0x102aa7188, 0x140000b8620}, 0x1400009ca00)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140000de280, {0x102aa7640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:54:40 server.go:3230: http: panic serving 127.0.0.1:58961: template: signup.html:16: unexpected EOF
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x102a478a0, 0x1400021a190})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x102aa7188?, 0x140000b8700}, {0x0, 0x0}, {0x140001d29f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x102aa7188?, 0x140000b8700?}, 0x103010d3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x140001d2ad8?, {0x102aa7188?, 0x140000b8700?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102aa7188, 0x140000b8700}, 0x1400018e500)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140001d6150?}, {0x102aa7188, 0x140000b8700}, 0x1400018e500)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140001395e0, {0x102aa7640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:54:40 server.go:3230: http: panic serving 127.0.0.1:58962: template: signup.html:16: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x102a478a0, 0x1400021a340})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x102aa7188?, 0x1400021e2a0}, {0x0, 0x0}, {0x1400005a9f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x102aa7188?, 0x1400021e2a0?}, 0x103010e3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x102aa7188?, 0x1400021e2a0?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102aa7188, 0x1400021e2a0}, 0x1400007a300)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000074330?}, {0x102aa7188, 0x1400021e2a0}, 0x1400007a300)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140000760a0, {0x102aa7640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:54:40 server.go:3230: http: panic serving 127.0.0.1:58963: template: signup.html:16: unexpected EOF
+goroutine 58 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x102a478a0, 0x1400021a500})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x102aa7188?, 0x1400021e380}, {0x0, 0x0}, {0x1400005a9f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x102aa7188?, 0x1400021e380?}, 0x103010e3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x102aa7188?, 0x1400021e380?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102aa7188, 0x1400021e380}, 0x14000222400)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000206d20?}, {0x102aa7188, 0x1400021e380}, 0x14000222400)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x1400027c000, {0x102aa7640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:54:47 server.go:3230: http: panic serving 127.0.0.1:58964: template: signup.html:16: unexpected EOF
+goroutine 63 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x102a478a0, 0x1400021a750})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x102aa7188?, 0x140001c6460}, {0x0, 0x0}, {0x140003bd9f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x102aa7188?, 0x140001c6460?}, 0x103010e3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x140003bdad8?, {0x102aa7188?, 0x140001c6460?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102aa7188, 0x140001c6460}, 0x1400018e700)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000074390?}, {0x102aa7188, 0x140001c6460}, 0x1400018e700)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x1400027c0a0, {0x102aa7640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:54:47 server.go:3230: http: panic serving 127.0.0.1:58965: template: signup.html:16: unexpected EOF
+goroutine 64 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x102a478a0, 0x14000012250})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x102aa7188?, 0x1400021e460}, {0x0, 0x0}, {0x140001419f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x102aa7188?, 0x1400021e460?}, 0x103010d3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x14000141ad8?, {0x102aa7188?, 0x1400021e460?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102aa7188, 0x1400021e460}, 0x1400018e900)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000207500?}, {0x102aa7188, 0x1400021e460}, 0x1400018e900)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x1400027c140, {0x102aa7640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:54:47 server.go:3230: http: panic serving 127.0.0.1:58966: template: signup.html:16: unexpected EOF
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x102a478a0, 0x14000012410})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x102aa7188?, 0x140003081c0}, {0x0, 0x0}, {0x1400005b9f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x102aa7188?, 0x140003081c0?}, 0x103010d3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x102aa7188?, 0x140003081c0?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102aa7188, 0x140003081c0}, 0x1400007a600)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000074b10?}, {0x102aa7188, 0x140003081c0}, 0x1400007a600)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000076140, {0x102aa7640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:54:48 server.go:3230: http: panic serving 127.0.0.1:58967: template: signup.html:16: unexpected EOF
+goroutine 98 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x102a478a0, 0x140000125d0})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x102aa7188?, 0x140003082a0}, {0x0, 0x0}, {0x1400005b9f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x102aa7188?, 0x140003082a0?}, 0x103010d3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x102aa7188?, 0x140003082a0?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102aa7188, 0x140003082a0}, 0x1400007a800)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000075290?}, {0x102aa7188, 0x140003082a0}, 0x1400007a800)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140000761e0, {0x102aa7640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:55:04 server.go:3230: http: panic serving 127.0.0.1:58968: template: signup.html:16: unexpected EOF
+goroutine 87 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x102a478a0, 0x1400021a9e0})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x102aa7188?, 0x1400021e540}, {0x0, 0x0}, {0x140000599f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x102aa7188?, 0x1400021e540?}, 0x103010e3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x14000059ad8?, {0x102aa7188?, 0x1400021e540?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102aa7188, 0x1400021e540}, 0x14000222800)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140004a4660?}, {0x102aa7188, 0x1400021e540}, 0x14000222800)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x1400027c320, {0x102aa7640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:55:04 server.go:3230: http: panic serving 127.0.0.1:58969: template: signup.html:16: unexpected EOF
+goroutine 88 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x102a478a0, 0x1400021ab90})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x102aa7188?, 0x1400021e620}, {0x0, 0x0}, {0x140001ce9f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x102aa7188?, 0x1400021e620?}, 0x103010d3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x140001cead8?, {0x102aa7188?, 0x1400021e620?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102aa7188, 0x1400021e620}, 0x14000222900)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140004a4720?}, {0x102aa7188, 0x1400021e620}, 0x14000222900)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x1400027c3c0, {0x102aa7640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:55:04 server.go:3230: http: panic serving 127.0.0.1:58970: template: signup.html:16: unexpected EOF
+goroutine 114 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x102a478a0, 0x1400011b560})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x102aa7188?, 0x140001c6540}, {0x0, 0x0}, {0x1400005a9f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x102aa7188?, 0x140001c6540?}, 0x103010d3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x102aa7188?, 0x140001c6540?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102aa7188, 0x140001c6540}, 0x1400018eb00)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140001d6690?}, {0x102aa7188, 0x140001c6540}, 0x1400018eb00)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000139680, {0x102aa7640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:55:05 server.go:3230: http: panic serving 127.0.0.1:58971: template: signup.html:16: unexpected EOF
+goroutine 119 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x102a478a0, 0x1400011b720})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x102aa7188?, 0x140001c6620}, {0x0, 0x0}, {0x1400005a9f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x102aa7188?, 0x140001c6620?}, 0x103010d3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x1400005aad8?, {0x102aa7188?, 0x140001c6620?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x102aa7188, 0x140001c6620}, 0x1400018ed00)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140001d6d80?}, {0x102aa7188, 0x140001c6620}, 0x1400018ed00)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000139720, {0x102aa7640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:59:29 server.go:3230: http: panic serving 127.0.0.1:58986: template: signup.html:14: unexpected EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x1033ab8a0, 0x14000012220})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10340b188?, 0x140002860e0}, {0x0, 0x0}, {0x1400014d9f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x10340b188?, 0x140002860e0?}, 0x12ae40f3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x1400014dad8?, {0x10340b188?, 0x140002860e0?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10340b188, 0x140002860e0}, 0x1400007a200)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000094030?}, {0x10340b188, 0x140002860e0}, 0x1400007a200)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000139400, {0x10340b640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:59:29 server.go:3230: http: panic serving 127.0.0.1:58988: template: signup.html:14: unexpected EOF
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x1033ab8a0, 0x140000123d0})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10340b188?, 0x140002861c0}, {0x0, 0x0}, {0x1400013b9f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x10340b188?, 0x140002861c0?}, 0x12ae40d3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x1400013bad8?, {0x10340b188?, 0x140002861c0?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10340b188, 0x140002861c0}, 0x1400009c500)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000074090?}, {0x10340b188, 0x140002861c0}, 0x1400009c500)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000076000, {0x10340b640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:59:29 server.go:3230: http: panic serving 127.0.0.1:58987: template: signup.html:14: unexpected EOF
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x1033ab8a0, 0x14000012580})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10340b188?, 0x140002862a0}, {0x0, 0x0}, {0x140002299f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x10340b188?, 0x140002862a0?}, 0x12ae40e3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x14000229ad8?, {0x10340b188?, 0x140002862a0?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10340b188, 0x140002862a0}, 0x14000222100)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400011d650?}, {0x10340b188, 0x140002862a0}, 0x14000222100)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140001394a0, {0x10340b640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:59:29 server.go:3230: http: panic serving 127.0.0.1:58989: template: signup.html:14: unexpected EOF
+goroutine 68 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x1033ab8a0, 0x14000012740})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10340b188?, 0x14000286380}, {0x0, 0x0}, {0x1400005b9f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x10340b188?, 0x14000286380?}, 0x12ae40e3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x10340b188?, 0x14000286380?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10340b188, 0x14000286380}, 0x1400007a700)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000075680?}, {0x10340b188, 0x14000286380}, 0x1400007a700)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140000760a0, {0x10340b640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:59:30 server.go:3230: http: panic serving 127.0.0.1:58990: template: signup.html:14: unexpected EOF
+goroutine 73 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x1033ab8a0, 0x14000012910})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10340b188?, 0x14000286460}, {0x0, 0x0}, {0x1400005b9f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x10340b188?, 0x14000286460?}, 0x12ae40e3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x10340b188?, 0x14000286460?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10340b188, 0x14000286460}, 0x1400007a900)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000075e00?}, {0x10340b188, 0x14000286460}, 0x1400007a900)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000076140, {0x10340b640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:59:35 server.go:3230: http: panic serving 127.0.0.1:58991: template: signup.html:14: unexpected EOF
+goroutine 74 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x1033ab8a0, 0x1400021a1d0})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10340b188?, 0x1400021e0e0}, {0x0, 0x0}, {0x140002f09f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x10340b188?, 0x1400021e0e0?}, 0x12ae40d3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x140002f0ad8?, {0x10340b188?, 0x1400021e0e0?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10340b188, 0x1400021e0e0}, 0x1400007aa00)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000075ec0?}, {0x10340b188, 0x1400021e0e0}, 0x1400007aa00)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140000761e0, {0x10340b640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 13:59:35 server.go:3230: http: panic serving 127.0.0.1:58992: template: signup.html:14: unexpected EOF
+goroutine 55 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x1033ab8a0, 0x1400021a390})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10340b188?, 0x1400021e1c0}, {0x0, 0x0}, {0x140002f09f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x10340b188?, 0x1400021e1c0?}, 0x12ae40d3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x140002f0ad8?, {0x10340b188?, 0x1400021e1c0?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10340b188, 0x1400021e1c0}, 0x14000222300)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x14000206840?}, {0x10340b188, 0x1400021e1c0}, 0x14000222300)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x1400026a000, {0x10340b640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 14:01:54 server.go:3230: http: panic serving 127.0.0.1:59016: template: signup.html:14: unexpected EOF
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x1033ab8a0, 0x14000012a30})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10340b188?, 0x140001a2000}, {0x0, 0x0}, {0x1400005b9f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x10340b188?, 0x140001a2000?}, 0x12ae40e3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x1400005bad8?, {0x10340b188?, 0x140001a2000?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10340b188, 0x140001a2000}, 0x1400018e200)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x1400011d740?}, {0x10340b188, 0x140001a2000}, 0x1400018e200)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x14000139540, {0x10340b640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
+2022/10/01 14:02:54 server.go:3230: http: panic serving 127.0.0.1:59020: template: signup.html:14: unexpected EOF
+goroutine 83 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1850 +0xb0
+panic({0x1033ab8a0, 0x14000012b60})
+	/usr/local/go/src/runtime/panic.go:890 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10340b188?, 0x1400021e2a0}, {0x0, 0x0}, {0x140002f19f8?, 0x3, 0x800?})
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/servers.go:16 +0xd0
+todo_app/app/controllers.signup({0x10340b188?, 0x1400021e2a0?}, 0x12ae40d3b?)
+	/Users/ushikitakumi/Desktop/program/go/todo_app/app/controllers/route_auth.go:6 +0x7c
+net/http.HandlerFunc.ServeHTTP(0x140002f1ad8?, {0x10340b188?, 0x1400021e2a0?}, 0x0?)
+	/usr/local/go/src/net/http/server.go:2109 +0x38
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10340b188, 0x1400021e2a0}, 0x1400007ae00)
+	/usr/local/go/src/net/http/server.go:2487 +0x140
+net/http.serverHandler.ServeHTTP({0x140002f6b40?}, {0x10340b188, 0x1400021e2a0}, 0x1400007ae00)
+	/usr/local/go/src/net/http/server.go:2947 +0x2c4
+net/http.(*conn).serve(0x140000763c0, {0x10340b640, 0x1400011d500})
+	/usr/local/go/src/net/http/server.go:1991 +0x560
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3102 +0x444
